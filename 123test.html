@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+<script  type="text/javascript">
+var m = [1, 2, 3, 4, 10, 6, 7, 8, 9, 5];
+for (var i = 0; i < 9; i++) {
+    var m_min = m[i];
+    for (var j = i + 1; j < 10; j++) {
+        if (m[j] < m_min) {
+            var mm = m[i];
+            m_min = m[j];
+            m[i] = m_min;
+            m[j] = mm;
+        }
+    }
+}
+document.write(m);
+document.write(mm);
+document.write('sss');
+</script>
+</body>
+</html>
